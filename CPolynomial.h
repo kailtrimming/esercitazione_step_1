@@ -1,20 +1,23 @@
 /*! @file CPolynomial.h
-	@brief A class for polynomial functions 
-	@author Kail Galeazzi Trimming
+	@brief class polynomial
+	@author Mario Opisso
+
 */ 
 
 #ifndef POLYNOMIAL_H
 #define POLYNOMIAL_H
+
 #include "CFunction.h"
 
-class Polynomial : public Function{
+/// @class Polynomial
+/// @brief A base class for polynomial
+class Polynomial : public Function {
 private:
     double* coeff;
     int degree;
 
 public:
-    
-	/// @name CONSTRUCTORs and DESTRUCTOR 
+	/// @name CONSTRUCTOR/DESTRUCTOR
 	/// @{
     Polynomial();
 	Polynomial(const double* coefficients, int size);
@@ -29,20 +32,27 @@ public:
 	bool operator==(const Polynomial& p);
 	/// @}
 
-
-	void SetPolynomial(const double* coefficients, int size);
-    double GetValue(double in) const;
-	
-	void Reset();
-
-	/// @name DEBUG and SERIALIZATION 
+	/// @name SETTERS 
 	/// @{
-	void ErrorMessage(const char *string); 
+	void SetPolynomial(const double* coefficients, int size);
+	///@}
+	
+	/// @name GETTERS 
+	/// @{
+    double GetValue(double in) const;
+	///@}
+	
+	/// @name BASIC HANDLING 
+	/// @{
+	void Reset();
+	///@}
+
+	/// @name DEBUG AND SERIALIZATION
+	/// @{
+	void ErrorMessage(const char *string);
 	void WarningMessage(const char *string);
 	void Dump();
 	/// @}
-	
-	
 };
 
 #endif
