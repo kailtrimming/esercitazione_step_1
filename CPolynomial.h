@@ -1,20 +1,11 @@
 /*! @file CPolynomial.h
 	@brief A class for polynomial functions 
-	@author Mario Opisso
-
-	Details.
+	@author Kail Galeazzi Trimming
 */ 
-
 
 #ifndef POLYNOMIAL_H
 #define POLYNOMIAL_H
-
-/*#include <iostream>
-#include <cmath>
-#include <cstring>*/
 #include "CFunction.h"
-
-//using namespace std;
 
 class Polynomial : public Function{
 private:

@@ -1,8 +1,6 @@
 /*! @file CFunction.h
 	@brief A virtual base class for functions of a single variable
-	@author Paolo Gastaldo
-
-	Details.
+	@author Kail Galeazzi Trimming
 */ 
 
 #ifndef FUNCTION_H

@@ -7,11 +7,11 @@ Power::Power()
 	Reset();
 }
 
-Power::Power(const double k_coefficent, double e_coefficent)
+Power::Power(double k_coefficient, double e_coefficient)
 {
 	cout << endl;
 	cout << "POWER -- Parameter constructor";
-	SetPower(k_coefficent, e_coefficent);
+	SetPower(k_coefficient, e_coefficient);
 }
 
 Power::Power(const Power& p)
@@ -48,10 +48,10 @@ bool Power::operator==(const Power& p)
 	return false;
 }
 
-void Power::SetPower(const double k_coefficent, double e_coefficent)
+void Power::SetPower(double k_coefficient, double e_coefficient)
 {
-	k_coeff = k_coefficent;
-	e_coeff = e_coefficent;
+	k_coeff = k_coefficient;
+	e_coeff = e_coefficient;
 }
 
 double Power::GetValue(double in)
@@ -65,7 +65,7 @@ void Power::Reset()
 	e_coeff = 0;
 }
 
-void Power::ErrorMessage(const char *string) 
+/*void Power::ErrorMessage(const char *string) 
 {	
 	cout << endl << "ERROR -- Power --";
 	cout << string << endl;
@@ -75,7 +75,7 @@ void Power::WarningMessage(const char *string)
 {
 	cout << endl << "WARNING -- Power --";
 	cout << string << endl;
-}
+}*/
 
 void Power::Dump()
 {
