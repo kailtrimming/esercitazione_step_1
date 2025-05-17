@@ -1,6 +1,6 @@
 /*! @file CPolynomial.h
 	@brief class polynomial
-	@author Mario Opisso
+	@author Kail Galeazzi Trimming
 
 */
 
