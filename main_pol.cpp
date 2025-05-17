@@ -19,8 +19,8 @@ int main() {
 	p0=p2;
 	p0.Dump();
 	
-	/*p3 = p0 + p2;
-	p3.Dump();*/
+	p3 = p0 + p2;
+	p3.Dump();
 	
 	if (p0==p1)
 		cout << "uguali" << endl;
