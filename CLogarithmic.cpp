@@ -20,7 +20,7 @@ Logarithmic::Logarithmic(double b_coefficient, double k_coefficient)
 	cout << endl;
 	cout << "LOGARITHMIC -- Parameter constructor";
 	
-	if(b_coefficient <= 0 && b_coefficient == 1)
+	if((b_coefficient <= 0) || (b_coefficient == 1))
 	{	
 		WarningMessage("Unvalid value of b (<= 0)");
 		Reset();
